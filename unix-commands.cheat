@@ -1,0 +1,45 @@
+% link, alias
+
+# creates a hard link to file (no dirs)
+ln <original path> <link path>
+
+# creates a soft link to a file or dir
+ln -s <original path> <link path>
+
+# list file links in a directory
+ls -l
+
+% filesize
+
+# displays file size/disc usage in KB
+du -hs <dir or file>
+
+# displays a tree of files
+tree .
+
+% covert
+
+; https://pandoc.org/
+pandoc -f <from_format> -t <to_format> <file>
+
+$ from_format: pandoc --list-input-formats
+$ to_format: pandoc --list-output-formats
+
+$ file: ls
+
+% random
+
+# random word with from unix word list
+shuf -n 1 /usr/share/dict/words
+
+# random number any range
+shuf -i 1-<number> -n 1
+
+# random number 0-32767
+echo $RANDOM
+
+% permissions
+
+# give execution permission to a file
+chmod +x <file>
+$ file: ls
