@@ -1,0 +1,10 @@
+% fun, entertainment
+
+# list available cows at cowpath
+cowsay -l
+
+# print a cow that says something
+cowsay -f <cow> <text>
+; https://github.com/cowsay-org/cowsay
+
+$ cow: cowsay -l

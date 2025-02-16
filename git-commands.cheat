@@ -1,0 +1,4 @@
+% git
+
+# list remotes
+git remote -v
