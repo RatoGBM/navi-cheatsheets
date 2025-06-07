@@ -8,6 +8,16 @@ spf
 mc
 ; https://midnight-commander.org/
 
+# Open rclone web-GUI
+rclone rcd --rc-web-gui
+; https://rclone.org/gui/
+
+% search grep
+
+# Search for text in files using ripgrep-all
+rga "<text>" <folder-file>
+$ folder-file: ls
+
 % archiving
 
 # Archive website with percollate
@@ -21,3 +31,11 @@ monolith <exclude-options> -o <output-file> <url>
 $ exclude-options: echo -e "\n--no-audio\n--no-css\n--no-images\n--no-js\n--no-video"
 $ format: echo -e "html\npdf\nmd\nepub"
 $ output-file: echo "<url>"|echo -e $(sed -r 's-.*://--;s+/+--+g;s/%/\\x/g;s/ /-/g')| sed 's|/|__|g' | perl -pe 's/(?<!\.html)$/.html/'
+
+% conversion, static-site-generator
+
+# Convert markdown to html
+pandoc --css="<css>" -s -f markdown+smart --toc --metadata pagetitle="<pagetitle>" --to=html5 <input> -o <output>
+$ input: ls
+$ css: echo -e "\nhttps://unpkg.com/mvp.css"
+; https://brie.dev/2020-06-markdown-to-html5-css-pandoc/
