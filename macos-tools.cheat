@@ -13,3 +13,11 @@ cmus
 
 # start MusikCube music/audio player
 musikcube
+
+# Spotlight search files
+mdfind <text>
+
+% macos, firefox
+
+# MacOS, open Firefox profile selection menu
+/Applications/Firefox.app/Contents/MacOS/firefox -P -no-remote
