@@ -1,4 +1,4 @@
-My cheatsheets for [navi](https://github.com/denisidoro/navi).
+My cheatsheets for [navi](https://github.com/denisidoro/navi). Many are specific to MacOS.
 
 My cheatsheets help when "I need a tool for X but I forgot what it is called." (unlike other navi cheatsheets which are mostly shortcuts for common commands.)
 
