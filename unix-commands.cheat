@@ -1,10 +1,10 @@
 % link, alias
 
 # creates a hard link to file (no dirs)
-ln <original path> <link path>
+ln <original_path> <link_path>
 
 # creates a soft link to a file or dir
-ln -s <original path> <link path>
+ln -s <original_path> <link_path>
 
 # list file links in a directory
 ls -l
@@ -12,15 +12,20 @@ ls -l
 % filesize
 
 # displays file size/disc usage in KB
-du -hs <dir or file>
+du -sh <dir_or_file>
+
+$ dir_or_file: ls -a
+
+% fs, filesystem
 
 # displays a tree of files
 tree .
 
 % covert
 
-; https://pandoc.org/
+# convert text file formats via pandoc
 pandoc -f <from_format> -t <to_format> <file>
+; https://pandoc.org/
 
 $ from_format: pandoc --list-input-formats
 $ to_format: pandoc --list-output-formats
@@ -43,3 +48,18 @@ echo $RANDOM
 # give execution permission to a file
 chmod +x <file>
 $ file: ls
+
+% dd
+; https://en.wikipedia.org/wiki/Dd_%28Unix%29
+
+# flash ISO to USB drive
+```sh
+echo "Flashing <file_iso> () to <disk_identifier>"
+echo -n "ISO file size:" du -sh <file_iso>
+sudo dd bs=1m status=progress if=<file_iso> of=/dev/<disk_identifier>
+```
+; https://blog.christopherhoelter.com/write-iso-to-usb
+; https://jamisonjohnson.me/blog/macos/creating-bootable-usb-with-dd/
+
+$ file_iso: ls
+$ disk_identifier: diskutil list --- --column 5

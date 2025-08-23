@@ -39,3 +39,14 @@ pandoc --css="<css>" -s -f markdown+smart --toc --metadata pagetitle="<pagetitle
 $ input: ls
 $ css: echo -e "\nhttps://unpkg.com/mvp.css"
 ; https://brie.dev/2020-06-markdown-to-html5-css-pandoc/
+
+% asciidoc
+
+# convert asciidoc file into html
+asciidoctor --verbose <input>
+$ input: ls
+
+# convert asciidoc files into html
+asciidoctor --verbose --source-dir <inputdir> --destination-dir <outputdir>
+$ inputdir: ls -d */
+$ outputdir: ls -d */

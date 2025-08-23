@@ -17,6 +17,14 @@ musikcube
 # Spotlight search files
 mdfind <text>
 
+% time, macos
+
+# Copy current time to clipboard
+date | pbcopy
+
+# Copy current UNIX timestamp to clipboard
+date +%s | pbcopy
+
 % macos, firefox
 
 # MacOS, open Firefox profile selection menu
