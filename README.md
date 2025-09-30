@@ -5,3 +5,7 @@ My cheatsheets help when "I need a tool for X but I forgot what it is called." (
 Cons: My cheatsheets won't work unless you install the tools (which you should, because they are great.) I put links to repos in the comments next to the cheatsheet entries.
 
 Enjoy!
+
+---
+
+[Cheat Sheet Syntax](https://github.com/denisidoro/navi/blob/master/docs/cheatsheet/syntax/README.md)

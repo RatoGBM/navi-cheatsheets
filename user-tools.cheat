@@ -50,3 +50,19 @@ $ input: ls
 asciidoctor --verbose --source-dir <inputdir> --destination-dir <outputdir>
 $ inputdir: ls -d */
 $ outputdir: ls -d */
+
+% image, magick
+
+# compress image with ImageMagick
+```
+magick <input> -quality <percentage>% <output>
+du -hs <input> <output>
+```
+
+# resize image with ImageMagick
+```
+magick <input> -size <percentage>% <output>
+du -hs <input> <output>
+```
+
+$ input: ls

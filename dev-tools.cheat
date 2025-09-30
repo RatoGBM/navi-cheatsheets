@@ -39,7 +39,7 @@ php -S localhost:<port> <file-path>
 
 # rclone servers
 ```sh
-echo "rclone will be serving on https://localhost:8080/"
+echo "rclone will be serving on <protocol>://localhost:8080/"
 rclone serve <protocol> .
 ```
 
@@ -48,3 +48,13 @@ caddy file-server --domain example.com
 
 $ port: echo -e "8000"
 $ protocol: echo -e "http\nftp\nsftp\ndocker\ndlna\nnfs\nrestic\ns3\nwebdav"
+
+% files, filemanager
+
+# make drag&dropable files
+dragon -v <file>
+
+# accept drag&dropable files
+dragon --target
+
+$ file: ls

@@ -63,3 +63,10 @@ sudo dd bs=1m status=progress if=<file_iso> of=/dev/<disk_identifier>
 
 $ file_iso: ls
 $ disk_identifier: diskutil list --- --column 5
+
+% which
+
+# find all installations of python
+which -a python python3
+# find all installations of <command>
+which -a <command>

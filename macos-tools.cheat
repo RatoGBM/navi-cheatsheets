@@ -17,6 +17,11 @@ musikcube
 # Spotlight search files
 mdfind <text>
 
+# Byte size of all files in folder using gdu
+gdu -hba .
+; https://github.com/dundee/gdu
+; default du on MacOS does not support the -b flag, and shows everything in KiB
+
 % time, macos
 
 # Copy current time to clipboard
@@ -28,4 +33,4 @@ date +%s | pbcopy
 % macos, firefox
 
 # MacOS, open Firefox profile selection menu
-/Applications/Firefox.app/Contents/MacOS/firefox -P -no-remote
+/Applications/Firefox.app/Contents/MacOS/firefox -P -no-remote 2>/dev/null
