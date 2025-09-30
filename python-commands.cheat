@@ -2,3 +2,10 @@
 
 # list conda environments
 conda env list
+
+% mamba
+@ python, conda
+
+# list mamba environments
+mamba env list
+; https://mamba.readthedocs.io/en/stable/user_guide/mamba.html
