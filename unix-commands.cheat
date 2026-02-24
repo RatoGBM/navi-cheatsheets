@@ -21,6 +21,9 @@ $ dir_or_file: ls -a
 # displays a tree of files
 tree .
 
+# display a tree of files (fancy highlighting)
+tre .
+
 % covert
 
 # convert text file formats via pandoc
@@ -61,7 +64,7 @@ sudo dd bs=1m status=progress if=<file_iso> of=/dev/<disk_identifier>
 ; https://blog.christopherhoelter.com/write-iso-to-usb
 ; https://jamisonjohnson.me/blog/macos/creating-bootable-usb-with-dd/
 
-$ file_iso: ls
+$ file_iso: ls .
 $ disk_identifier: diskutil list --- --column 5
 
 % which
@@ -70,3 +73,10 @@ $ disk_identifier: diskutil list --- --column 5
 which -a python python3
 # find all installations of <command>
 which -a <command>
+
+% tar, compress, archive
+
+# compress with tar
+tar -cjf <file_or_dir>.tar.bz2 <file_or_dir>
+
+$ file_or_dir: ls -a .

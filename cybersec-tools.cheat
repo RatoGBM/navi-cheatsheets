@@ -26,3 +26,5 @@ kryptor -e -p <path>
 
 # decrypt files using kryptor
 kryptor -d <path>
+
+$ path: ls

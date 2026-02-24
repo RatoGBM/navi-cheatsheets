@@ -9,6 +9,9 @@ zed <path>
 # opens Helix Editor
 hx <path>
 
+# hex viewer
+hexyl <path>
+
 % server, http, localhost
 ; https://news.ycombinator.com/item?id=22082585
 
@@ -58,3 +61,10 @@ dragon -v <file>
 dragon --target
 
 $ file: ls
+
+% zip directory
+# Zip a directory recursively into a .zip archive
+zip -r <archive>.zip <dir>
+
+$ archive: ls
+$ dir: ls

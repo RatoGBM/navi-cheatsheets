@@ -8,6 +8,14 @@ spf
 mc
 ; https://midnight-commander.org/
 
+# open Nnn file manager
+nnn
+; https://github.com/jarun/nnn
+
+# open broot file manager 
+broot 
+; https://dystroy.org/broot/
+
 # Open rclone web-GUI
 rclone rcd --rc-web-gui
 ; https://rclone.org/gui/

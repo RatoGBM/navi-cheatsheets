@@ -16,14 +16,20 @@ gnuplot
 ;http://www.gnuplot.info/
 
 # open visidata spreadsheet editor
-vd <spreadsheet>
+vd <file>
 ; visidata.org
+
+# open sc spreadsheet calculator
+sc-im <file>
+; https://github.com/andmarti1424/sc-im
 
 # factor number into primes
 factor <number>
 
 # unit conversions
 units
+
+$ file: ls
 
 % math, notebook
 
